@@ -1,1 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
+h1, h2, h4 {
+    text-align: center;
+}
+
+img {
+    align-items: center;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align items */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.flex-item {
+    border: 2px solid #ddd; /* Border around each section */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Inner spacing */
+    margin: 10px; /* Outer spacing */
+    background-color: #f9f9f9; /* Light background */
+    flex: 1 1 300px; /* Flexible sizing */
+    max-width: 400px; /* Restrict maximum size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text */
+}
+
+.flex-item h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.flex-item p, .flex-item ul, .flex-item li {
+    margin: 5px 0;
+    color: #555;
+}
+
+.picture-gallery {
+        display: flex;
+        justify-content: center; 
+        gap: 20px; 
+        flex-wrap: wrap;
+        margin: 0 auto; 
+        margin-top: 30px;
+    }
+
+.picture-gallery img {
+    display: flex;
+    margin: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    border-radius: 50px;
+    height: 300px;
+    object-fit: cover;
+}
