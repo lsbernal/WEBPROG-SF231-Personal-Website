@@ -17,6 +17,7 @@ h2, h4 {
 img {
   text-align: center;
 }
+
 div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -26,6 +27,16 @@ ul, ol {
   margin: 0 auto;
   text-align: center; 
   list-style-position: inside;
+}
+
+section {
+border: 1px solid #6a6a6a;
+border-radius: 8px;
+margin: 40px auto;
+padding-top: 20px;
+padding-bottom: 50px;
+background-color: #f5eaea;
+width: 70%;
 }
 
 ol.a li{
@@ -42,9 +53,26 @@ ul.b li{
   font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-table {
-  border-collapse: collapse;
-  margin: 0 auto;
+.picturegall {
+  padding-top: 50px;
+}
+
+.tbl1 {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap;
+  margin: 0 auto; 
   margin-top: 30px;
 }
 
+.tbl1 img {
+  width: 350px; 
+  height: 250px; 
+  object-fit: cover; 
+  text-align: center; 
+}
+
+.tbl1 p {
+  text-align: center; 
+}
