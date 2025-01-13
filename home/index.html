@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">
+  <link rel="stylesheet" href="css/pink.css?version=0.1">
+  <link rel="stylesheet" href="css/images.css?version=0.2">
+  <link rel="stylesheet" href="css/shopping.css">
+</head>
+<body>
+
+  <div class="grid-container">
+    <!-- Header Section -->
+    <div class="item1">
+        <h1>Personal Profile Web Page</h1>
+    </div>
+
+    <!-- About Me Section (Includes Flexbox) -->
+    <div class="item3">
+        <h1>About Me</h1>
+        <h4>Hi, I'm Lorenzo</h4>
+        <img src="images/me.png" alt="Profile Picture" style="width: 300px; height: auto;">
+        
+
+        <h4>Education / Achievements</h4>
+        <p>I studied at <a href="https://www.apc.edu.ph">Asia Pacific College</a> for Senior High School, and decided to pursue my undergraduate studies at Asia Pacific College still.</p>
+
+        <h4>Course:</h4>
+        <p>BS Computer Science with specialization in Cybersecurity and Forensics</p>
+    </div>
+        <!-- Flexbox Section -->
+      <div class="item6">
+            <div class="flex-item">
+                <h4>IT Experience #1</h4>
+                <p>Made a replica of the library of APC using Minecraft, and used Minecraft commands.</p>
+            </div>
+            <div class="flex-item">
+                <h4>IT Experience #2</h4>
+                <p>Developed a website that sells gym equipment called Health N'Fit. Final Project for SHS.</p>
+            </div>
+      </div>
+             
+    <!-- Hobbies Section -->
+    <div class="item4">
+      <div class="section">
+          <h4>Hobbies & Interests</h4>
+          <ul>
+              <li>Watching movies</li>
+              <li>Going to the gym</li>
+              <li>Learning Jiu Jutsu</li>
+          </ul>
+      </div>
+      <div class="section">
+          <h4>Goals In Life / Dream</h4>
+          <ul>
+              <li>To be financially stable</li>
+              <li>To have a loving family</li>
+              <li>To be healthy and live a long and happy life.</li>
+          </ul>
+      </div>
+  </div>
+  
+  
+      
+  
+    <!-- Footer -->
+    <div class="item5">
+      <h1> My images</h1>
+      <div id="app2">
+          <div>
+            <figure v-for="x in manyFoods">
+              <img v-bind:src="x.url" class="food-image">
+              <figcaption>{{ x.name }}</figcaption>
+            </figure>
+          </div>
+        </div>
+    </div> 
+    <div class ="item7">
+    <div id="app3">
+      <form v-on:submit.prevent="addItem">
+        <p class="feedback">
+          Have some feedback? <br>
+          <input type="text" required v-model="itemName" class="large-input">
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/images.js"></script>
+<script src="js/shopping.js"></script>
+
+</body>
+</html>

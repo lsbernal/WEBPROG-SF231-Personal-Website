@@ -1,0 +1,39 @@
+#app {
+    display: inline-block;
+    padding: 10px;
+    font-size: x-large;
+    background-color: lightgreen;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    background-image: url('home/images/hello.png'); /* Use forward slashes */
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    width: 80%; /* Adjust as needed */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Centers the body horizontally */
+    padding: 20px; /* Inner spacing */
+    position: relative; /* Needed for pseudo-element positioning */
+    z-index: 1; /* Ensure content stays above background */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('home/images/fam.jpg'); /* Use forward slashes */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Adjust the blur intensity */
+    z-index: -1; /* Place it behind the body content */
+    opacity: 0.7; /* Optional: Adjust opacity for a subtle effect */
+}
