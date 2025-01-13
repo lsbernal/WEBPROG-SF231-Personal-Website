@@ -43,7 +43,7 @@ h1 {
 }
 
 h4 {
-    color: #007bff;
+    color: #000000;
     font-size: 1.5rem;
 }
 
@@ -75,7 +75,7 @@ h4 {
 .item1 {
     grid-area: header;
     text-align: center;
-    background-color: #007bff;
+    background-color: #ffffff;
     color: #ffffff;
     padding: 20px;
     font-size: 2.5rem;
@@ -116,7 +116,7 @@ h4 {
 
 .item4 {
     grid-area: hobgoal;
-    background-color: #093772;
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -146,7 +146,7 @@ h4 {
 .section h4 {
     margin-bottom: 10px;
     font-size: 1.2rem;
-    color: #007bff;
+    color: #000000;
 }
 
 .section p {
@@ -174,7 +174,7 @@ h4 {
     color: #ffffff;
     padding: 20px;
     font-size: 1.2rem;
-    border-top: 4px solid #007bff;
+    border-top: 4px solid #000000;
 }
 
 .flex-container {
@@ -194,7 +194,7 @@ h4 {
 .flex-item h4 {
     margin-bottom: 10px;
     font-size: 1.2rem;
-    color: #007bff;
+    color: #000000;
 }
 
 .flex-item p {
