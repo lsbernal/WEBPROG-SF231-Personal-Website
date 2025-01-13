@@ -1,19 +1,17 @@
-
-  export default {
-    data() {
-      return {
-        email: '',
-        message: '',
-        endpoint: 'https://formcarry.com/s/{Your Form ID}',
-      }
+document.addEventListener('DOMContentLoaded', function() {
+  new Vue({
+    el: '#app3',
+    data: {
+      itemName: '',
+      comments: []
     },
     methods: {
-      async submitForm() {
-        const data = {
-          email: this.email,
-          message: this.message,
+      addItem() {
+        if (this.itemName.trim() !== '') {
+          this.comments.push(this.itemName);
+          this.itemName = '';
         }
-        const response = await this.$axios.post(this.endpoint, data)
-      },
-    },
-  }
+      }
+    }
+  });
+});

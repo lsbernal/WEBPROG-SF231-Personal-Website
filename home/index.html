@@ -77,15 +77,22 @@
         </div>
     </div> 
     <div class ="item7">
-    <div id="app3">
-      <form v-on:submit.prevent="addItem">
-        <p class="feedback">
-          Have some feedback? <br>
-          <input type="text" required v-model="itemName" class="large-input">
-        </p>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      <div id="app3">
+        <form @submit.prevent="addItem">
+          <p>
+            Have some feedback? <br>
+            <input type="text" required placeholder="Type here:" v-model="itemName" class="large-input">
+          </p>
+          <button type="submit">Submit</button>
+        </form>
+    
+        <div v-if="comments.length > 0" class="comments">
+          <h3>Comments:</h3>
+          <ul>
+            <li v-for="(comment, index) in comments" :key="index">{{ comment }}</li>
+          </ul>          
+        </div>
+      </div>
   </div>
 </div>
 
@@ -94,6 +101,7 @@
 <script src="js/vue.js"></script>
 <script src="js/images.js"></script>
 <script src="js/shopping.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
 </body>
 </html>
