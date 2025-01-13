@@ -13,14 +13,16 @@ button {
   border-radius: 10px;
 }
 button:hover {
-  background: linear-gradient(145deg, #bccee2, #007bff);
+  background: linear-gradient(145deg, #414e53, #414e53);
   transform: scale(1.05);
 }
-#app3 {
+#survey-container {
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
+
+
 .comments {
   margin-top: 20px;
   text-align: left; 

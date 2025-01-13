@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   new Vue({
-    el: '#app3',
+    el: '#survey-container',
     data: {
       itemName: '',
       comments: []
